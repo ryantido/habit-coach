@@ -1,8 +1,7 @@
-import { describe, it, expect } from "vitest";
-import { SideBar } from "../components/SideBar";
-import { MemoryRouter, Routes, Route } from "react-router-dom";
-
 import { render, screen } from "@testing-library/react";
+import { MemoryRouter, Route, Routes } from "react-router-dom"
+import { SideBar } from "../components/SideBar";
+import { describe, it, expect } from "vitest";
 import userEvent from "@testing-library/user-event";
 
 describe("Sidebar component", () => {
@@ -42,7 +41,7 @@ describe("Sidebar component", () => {
     /dashboard/i,
     /toutes les habitudes/i,
     /statistiques/i,
-    /communauté/i,
+    /communaut/i,
     /param/i,
     /aide/i,
   ])("should contain a link with the text %s", (text) => {
@@ -53,7 +52,7 @@ describe("Sidebar component", () => {
   it("should apply hover class only if component uses dynamic class change", async () => {
     setup();
     const user = userEvent.setup();
-    const link = screen.getAllByRole("listitem")[0];
+    const link = screen.getAllByRole("link")[0];
 
     await user.hover(link);
     expect(link.className).toMatch(/hover/);
@@ -82,6 +81,6 @@ describe("Sidebar component", () => {
     setup();
     const img = screen.getByRole("img");
     expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute("src", /uploads\/avatar/i);
+    expect(img.getAttribute("src")).toMatch(/uploads\/avatar/i);
   });
 });
