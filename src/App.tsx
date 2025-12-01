@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { SideBar } from "./components/SideBar"
+import { SideBar } from "@components/SideBar"
 
 export const App = () => {
   const [open, setOpen] = useState(true)

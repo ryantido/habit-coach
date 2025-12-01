@@ -1,7 +1,7 @@
+import { SUB_LEVEL_LINKS, TOP_LEVEL_LINKS } from "@/constants/nav-links";
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { Rocket } from "lucide-react";
-import { SUB_LEVEL_LINKS, TOP_LEVEL_LINKS } from "../constants/nav-links";
-import { Link } from "react-router-dom";
 
 export const SideBar = ({ isDrawerOpen }: { isDrawerOpen: boolean }) => {
   return (
@@ -24,7 +24,10 @@ export const SideBar = ({ isDrawerOpen }: { isDrawerOpen: boolean }) => {
         <h1 className="text-2xl font-semibold text-gray-700">Habit Coach</h1>
       </header>
 
-      <nav aria-label="Primary navigation" className="flex-1 overflow-y-auto flex flex-col justify-between">
+      <nav
+        aria-label="Primary navigation"
+        className="flex-1 overflow-y-auto flex flex-col justify-between"
+      >
         <ul className="list-none px-2 space-y-1">
           {TOP_LEVEL_LINKS.map(({ label, href, icon: Icon }) => (
             <li key={label}>
@@ -47,7 +50,10 @@ export const SideBar = ({ isDrawerOpen }: { isDrawerOpen: boolean }) => {
           ))}
         </ul>
 
-        <ul aria-label="Secondary navigation" className="list-none px-2 mt-6 space-y-1">
+        <ul
+          aria-label="Secondary navigation"
+          className="list-none px-2 mt-6 space-y-1"
+        >
           {SUB_LEVEL_LINKS.map(({ label, href, icon: Icon }) => (
             <li key={label}>
               <Link
@@ -55,7 +61,7 @@ export const SideBar = ({ isDrawerOpen }: { isDrawerOpen: boolean }) => {
                 className="
                   flex items-center gap-x-4 text-gray-700 
                   hover:text-blue-600 hover:bg-blue-50 
-                  transition-colors duration-300 font-mehrefdium tracking-tight
+                  transition-colors duration-300 font-medium tracking-tighter
                   px-4 py-3 rounded-full
                   focus-visible:outline-2 
                   focus-visible:outline-blue-600
