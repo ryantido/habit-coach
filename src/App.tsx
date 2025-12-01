@@ -1,18 +1,18 @@
-import { useState } from "react"
-import { SideBar } from "@components/SideBar"
+import { Route, Routes } from "react-router-dom";
+import { Layout } from "./components/layouts/Layout";
 
 export const App = () => {
-  const [open, setOpen] = useState(true)
   return (
-    <div>
-    
-    <div className="flex">
-      <SideBar isDrawerOpen={open} />
-      <div className="flex-1 flex items-center justify-center">Habbit Coach !
-    <button onClick={() => setOpen(!open)}>Toggle - {open ? "open" : "closed"}</button>
-
-      </div>
-    </div>
-    </div>
-  )
-}
+    <Layout>
+      <Routes>
+        <Route path="/" element={<h1>Welcome</h1>} />
+        <Route path="/habitudes" element={<h1>habitudes</h1>} />
+        <Route path="/statistiques" element={<h1>statistiques</h1>} />
+        <Route path="/communaute" element={<h1>communaute</h1>} />
+        <Route path="/parametres" element={<h1>parametre</h1>} />
+        <Route path="/aide" element={<h1>aide</h1>} />
+        <Route path="/profile" element={<h1>Profile</h1>} />
+      </Routes>
+    </Layout>
+  );
+};
