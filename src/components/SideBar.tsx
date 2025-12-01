@@ -14,6 +14,7 @@ export const SideBar = ({ isDrawerOpen }: { isDrawerOpen: boolean }) => {
       animate={{
         width: isDrawerOpen ? "284px" : 0,
         opacity: isDrawerOpen ? 1 : 0,
+        visibility: isDrawerOpen ? "visible" : "hidden"
       }}
       aria-label="sidebar"
       aria-expanded={isDrawerOpen}
