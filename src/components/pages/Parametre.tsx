@@ -86,11 +86,11 @@ export default function Parametre() {
         <h2 className="text-xl font-semibold mb-4">Gestion des données</h2>
         <div className="grid md:grid-cols-2 gap-3">
           <Button
-            className="rounded-xl bg-transparent hover:bg-transparent border border-blue-500 text-blue-500"
+            className="rounded-xl bg-transparent hover:bg-transparent border border-blue-500 text-blue-500 max-md:focus:ring-1"
             label="Exporter mes données"
           />
           <Button
-            className="rounded-xl bg-transparent hover:bg-transparent border border-red-500 text-red-500 focus:ring-red-600"
+            className="rounded-xl bg-transparent hover:bg-transparent border border-red-500 text-red-500  max-md:focus:ring-1 focus:ring-red-600"
             label="Supprimer mon compte"
           />
         </div>
