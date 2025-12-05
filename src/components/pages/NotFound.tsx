@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-gray-100 px-6 fixed inset-0 z-10">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950 text-gray-100 px-6 fixed inset-0 z-20">
       <motion.img
         src="/404.jpg"
         alt="Astronaut Lost"
