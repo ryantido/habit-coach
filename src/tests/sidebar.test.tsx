@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom"
-import { SideBar } from "@components/SideBar";
+import { SideBar } from "@/components/ui/SideBar";
 import { describe, it, expect } from "vitest";
 import userEvent from "@testing-library/user-event";
 

@@ -12,11 +12,11 @@ export const DrawerButton = ({ isDrawerOpen }: { isDrawerOpen: boolean }) => {
           h-9 w-9 p-2
           rounded-md 
           transition duration-300
-          cursor-pointer
+          cursor-pointer z-50
           absolute top-4 left-4
 
           text-blue-600
-          hover:bg-blue-100
+          bg-blue-100
           active:bg-blue-200/70
   
           focus:outline-none
