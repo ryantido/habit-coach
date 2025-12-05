@@ -15,7 +15,7 @@ export const Button = ({
       onClick={action}
       className={cn(
         "focus:ring-4 focus:ring-blue-600 max-sm:text-xs max-md:px-2",
-        "bg-blue-700/80 text-blue-50 px-4 py-3 rounded-full flex",
+        "bg-blue-700/80 text-blue-50 px-4 py-2 rounded-full flex",
         "hover:bg-blue-600 transition duration-300 focus:outline-2",
         "justify-center items-center gap-x-2 cursor-pointer",
         className
