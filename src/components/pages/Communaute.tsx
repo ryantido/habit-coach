@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export default function Communaute() {
   return (
     <MotionWrapper ariaLabel="communauté">
-      <div className="grid md:grid-cols-[65%_auto] gap-5">
+      <div className="grid lg:grid-cols-[65%_auto] gap-5">
         <div>
           <h1 className="text-3xl font-extrabold tracking-normal text-gray-800 mb-4">
             Communaut&eacute;
