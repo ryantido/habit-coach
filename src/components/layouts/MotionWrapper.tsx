@@ -1,6 +1,12 @@
 import { motion } from "motion/react";
 
-export const MotionWrapper = ({ children, ariaLabel }: { children: React.ReactNode, ariaLabel: string }) => {
+export const MotionWrapper = ({
+  children,
+  ariaLabel,
+}: {
+  children: React.ReactNode;
+  ariaLabel: string;
+}) => {
   return (
     <motion.section
       initial={{ opacity: 0, y: 15, x: -15 }}
