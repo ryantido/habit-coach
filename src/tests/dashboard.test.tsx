@@ -1,4 +1,5 @@
-import { Dashboard } from "@/components/pages/Dashboard";
+
+import Dashboard from "@/components/pages/Dashboard";
 import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it } from "vitest";
 

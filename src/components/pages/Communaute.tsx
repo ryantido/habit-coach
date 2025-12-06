@@ -101,7 +101,7 @@ export default function Communaute() {
             </section>
           </section>
         </div>
-        <section className="bg-gray-50 shadow-sm rounded-xl p-5 space-y-7 max-h-fit">
+        <section className="bg-gray-50 shadow-sm rounded-xl p-5 space-y-7 h-fit">
           <h2 className="text-xl font-semibold tracking-normal text-gray-800 mb-4">
             Habitudes populaires
           </h2>
