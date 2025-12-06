@@ -9,12 +9,19 @@ export const HabitCard = ({ habit, range, more, action }: HabitCardProps) => {
       aria-label={`habit-card-${habit.title}`}
     >
       <section aria-label={`${habit.title} - ${habit.duration}`}>
-        <h2 className="text-lg text-gray-700 font-semibold mb-2">{habit.title}</h2>
+        <h2 className="text-lg text-gray-700 font-semibold mb-2">
+          {habit.title}
+        </h2>
         <div className="h-2 w-full bg-blue-100/50 rounded-full">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${Math.min(range, 100)}%` }}
-            transition={{ type: "spring", stiffness: 300, damping: 15, delay: .5 }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 15,
+              delay: 0.5,
+            }}
             className="h-full bg-blue-500 rounded-full"
           />
         </div>
