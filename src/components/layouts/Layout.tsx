@@ -14,7 +14,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {isMdUp ? (
         <SideBar isDrawerOpen={isDrawerOpen} />
       ) : (
-        <FloatingSidebar isOpen={isDrawerOpen} />
+        <FloatingSidebar isOpen={!isDrawerOpen} />
       )}
       <main className="flex-1 bg-blue-100/50 relative max-h-dvh">
         <DrawerButton isDrawerOpen={isDrawerOpen} />
