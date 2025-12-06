@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "motion/react";
-import { cn } from "@/lib/utils"; // ton utilitaire pour merg­er les classes
+import { cn } from "@/lib/utils";
 import type { TabBarProps } from "@/types";
 
 export function TabBar({ tabs, value, onValueChange, className }: TabBarProps) {
